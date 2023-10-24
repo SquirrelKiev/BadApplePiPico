@@ -24,7 +24,18 @@
   "cmake.generator": "Ninja",
   "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
   "files.associations": {
-    "st7789.h": "c"
+    "st7789.h": "c",
+    "badapple.h": "c",
+    "chain_decode.h": "c",
+    "consts.h": "c",
+    "assert.h": "c",
+    "stdio.h": "c",
+    "varint.h": "c",
+    "stdlib.h": "c",
+    "stdint.h": "c",
+    "badapple-testframe.h": "c",
+    "zlib.h": "c",
+    "badapple-testframe2.h": "c"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

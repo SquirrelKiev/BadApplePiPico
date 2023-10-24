@@ -12,11 +12,14 @@ pico_sdk_init()
 # rest of your project
 
 add_subdirectory("lib/st7789")
+add_subdirectory("lib/varint")
+add_subdirectory("lib/zlib")
 
 add_executable(bad_apple
     main.c
+    chain_decode.c
 )
 
-target_link_libraries(bad_apple pico_stdlib hardware_spi pico_st7789)
+target_link_libraries(bad_apple pico_stdlib hardware_spi pico_st7789 zlib)
 
 pico_add_extra_outputs(bad_apple)

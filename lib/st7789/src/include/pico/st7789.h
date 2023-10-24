@@ -27,6 +27,6 @@ void st7789_fill(uint16_t pixel);
 void st7789_fill_malloc(uint16_t pixel);
 void st7789_set_cursor(uint16_t x, uint16_t y);
 void st7789_vertical_scroll(uint16_t row);
-void st7790_backlight(bool on);
+void st7789_backlight(bool on);
 
 #endif

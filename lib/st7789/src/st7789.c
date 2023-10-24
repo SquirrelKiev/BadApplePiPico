@@ -225,10 +225,6 @@ void st7789_fill_malloc(uint16_t pixel)
     int num_pixels = st7789_width * st7789_height;
     uint16_t *buffer = (uint16_t *)malloc(num_pixels * sizeof(uint16_t));
 
-    if (!buffer) {
-        return;
-    }
-
     for (int i = 0; i < num_pixels; i++) {
         buffer[i] = pixel;
     }
@@ -256,6 +252,6 @@ void st7789_vertical_scroll(uint16_t row)
     st7789_cmd(0x37, data, sizeof(data));
 }
 
-void st7790_backlight(bool on){
+void st7789_backlight(bool on){
     gpio_put(st7789_cfg.gpio_bl, on);
 }
